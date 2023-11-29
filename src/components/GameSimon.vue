@@ -26,16 +26,21 @@
 
 import SimonItem from './SimonItem.vue';
 import { randomInRange } from "@/lib/random"
+import Audio1 from "@/assets/img/sounds/1.mp3"
+import Audio2 from "@/assets/img/sounds/2.mp3"
+import Audio3 from "@/assets/img/sounds/3.mp3"
+import Audio4 from "@/assets/img/sounds/4.mp3"
+
 export default {
     name: 'GameSimon',
     components: { SimonItem },
     data() {
         return {
             items: [
-                { id: 1, isActive: false, sound: '1.mp3', color: 'red', },
-                { id: 2, isActive: false, sound: '2.mp3', color: 'yellow', },
-                { id: 3, isActive: false, sound: '3.mp3', color: 'green', },
-                { id: 4, isActive: false, sound: '4.mp3', color: 'aqua', },
+                { id: 1, isActive: false, sound: Audio1, color: 'red', },
+                { id: 2, isActive: false, sound: Audio2, color: 'yellow', },
+                { id: 3, isActive: false, sound: Audio3, color: 'green', },
+                { id: 4, isActive: false, sound: Audio4, color: 'aqua', },
             ],
             speed: 1000,
             lvl: 1,

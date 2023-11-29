@@ -1,6 +1,6 @@
 <template>
     <div @click="onClick" :class="`simon-item ${color} ` + getActiveClass">
-        <audio ref="soundRef" :src="'/sounds/' + sound"></audio>
+        <audio ref="soundRef" :src="sound"></audio>
     </div>
 </template>
 
